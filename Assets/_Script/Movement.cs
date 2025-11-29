@@ -11,6 +11,9 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRenderer;
 
+    public float jumpForce = 10f;
+    public float groundedTolerance = 0.05f;
+
     void Start()
     {
 
@@ -25,6 +28,13 @@ public class Movement : MonoBehaviour
         if (moveHorizontal != 0)
         {
             spriteRenderer.flipX = moveHorizontal > 0;
+        }
+
+        bool isGrounded = Mathf.Abs(rb.linearVelocity.y) < groundedTolerance;
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
 }
