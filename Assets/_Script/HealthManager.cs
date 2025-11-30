@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
     {
         currentHealth -= Damage;
 
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
             Debug.Log("enemy dead");

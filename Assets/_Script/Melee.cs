@@ -6,7 +6,7 @@ public class Melee : MonoBehaviour
     public float attackRadius = 1f;
     public LayerMask enemyMask;
 
-    public int attackDamage = 1;
+    public int attackDamage = 10;
 
     public float cooldownTime = .5f;
     private float cooldownTimer = 0f;
@@ -35,7 +35,7 @@ public class Melee : MonoBehaviour
                     enemy.GetComponent<HealthManager>().TakeDamage(attackDamage);
                 }
 
-                cooldownTime = cooldownTime;
+                cooldownTimer = cooldownTime;
             }
         }
 

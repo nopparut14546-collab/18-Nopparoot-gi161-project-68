@@ -2,14 +2,13 @@
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField]
-    private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
 
-    [SerializeField]
-    private float moveSpeed;
+    [SerializeField] private float moveSpeed;
 
-    [SerializeField]
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [SerializeField] private Animator animator;
 
     public float jumpForce = 10f;
     public float groundedTolerance = 0.05f;
@@ -23,7 +22,6 @@ public class Movement : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal") * moveSpeed;
         rb.linearVelocity = new Vector2(moveHorizontal, rb.linearVelocity.y);
-        //Debug.Log(moveHorizontal);
 
         if (moveHorizontal != 0)
         {
