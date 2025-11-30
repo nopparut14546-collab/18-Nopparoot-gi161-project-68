@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 106776227aaffe94f99bf86fa4bcba3f
+guid: 0d87b11342562994ba2cd11c9fde868a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3414614767393434152
-    second: Factory1-bg_0
+      213: 396130066105348899
+    second: BlackWallpaper_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Factory1-bg_0
+      name: BlackWallpaper_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 623
-        height: 347
+        width: 741
+        height: 358
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d516b0e5f9dc90d0800000000000000
-      internalID: -3414614767393434152
+      spriteID: 323bf0342365f7500800000000000000
+      internalID: 396130066105348899
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Factory1-bg_0: -3414614767393434152
+      BlackWallpaper_0: 396130066105348899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
