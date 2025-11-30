@@ -33,7 +33,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.CompareTag("Player") && damageTimer >= damageCooldown)
         {
-            PlayerHealth hp = other.GetComponent<PlayerHealth>();
+            Health hp = other.GetComponent<Health>();
 
             if (hp != null)
             {
