@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
-
-    [SerializeField] private Animator animator;
 
     public float jumpForce = 10f;
     public float groundedTolerance = 0.05f;
@@ -33,6 +31,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        } 
     }
 }
