@@ -23,11 +23,11 @@ public class Movement : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal") * moveSpeed;
         rb.linearVelocity = new Vector2(moveHorizontal, rb.linearVelocity.y);
-        Debug.Log(moveHorizontal);
+        //Debug.Log(moveHorizontal);
 
         if (moveHorizontal != 0)
         {
-            spriteRenderer.flipX = moveHorizontal > 0;
+            transform.localScale = new Vector3(moveHorizontal < 0 ? 1 : -1, 1, 1);
         }
 
         bool isGrounded = Mathf.Abs(rb.linearVelocity.y) < groundedTolerance;
