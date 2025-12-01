@@ -459,6 +459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 192977026248804216, guid: b2a63301fde68e944aa91eb1c71ff7c5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4661599069944038683, guid: b2a63301fde68e944aa91eb1c71ff7c5, type: 3}
       propertyPath: maxHealth
       value: 60
@@ -537,7 +541,7 @@ GameObject:
   - component: {fileID: 899159889}
   m_Layer: 6
   m_Name: Enemy (1)
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1351,6 +1355,10 @@ PrefabInstance:
     - target: {fileID: 192977026248804216, guid: b2a63301fde68e944aa91eb1c71ff7c5, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 192977026248804216, guid: b2a63301fde68e944aa91eb1c71ff7c5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4661599069944038683, guid: b2a63301fde68e944aa91eb1c71ff7c5, type: 3}
       propertyPath: maxHealth
